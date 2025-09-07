@@ -1,45 +1,45 @@
-# What It Works
+# Fonctionnalités du projet
 
-1️⃣ **Project Setup & Scaffolding**
+1️⃣ **Mise en place du projet et génération initiale**
 
-- Install Laravel, Livewire, Alpine.js, and Jetstream.
-- Scaffold initial models: Product, Variant, Cart, Image.
-- Create migrations, factories, and seeders to populate database with sample data.
+- Installer Laravel, Livewire, Alpine.js et Jetstream.  
+- Générer les modèles initiaux : Produit, Variante, Panier, Image.  
+- Créer les migrations, factories et seeders pour remplir la base de données avec des données de test.  
 
-2️⃣ **Storefront & Product Display**
+2️⃣ **Vitrine et affichage des produits**
 
-- Design a storefront page with product listings.
-- Format money/currency properly using Money objects.
-- Design product pages with detailed info.
-- Dynamic product image selector (click to enlarge images via Alpine.js).
+- Concevoir une page vitrine avec la liste des produits.  
+- Gérer correctement le formatage de l’argent/de la devise à l’aide des objets Money.  
+- Concevoir des pages produits détaillées.  
+- Sélecteur dynamique d’images produits (cliquer pour agrandir les images avec Alpine.js).  
 
-3️⃣ **Cart Functionality**
+3️⃣ **Fonctionnalités du panier**
 
-- Add to cart with validation.
-- Persist cart and cart items in the database.
-- Display success notifications when items are added.
-- Show cart in navigation with item count.
-- Cart page to review cart contents.
-- Delete cart items and merge variant quantities.
-- Increment/decrement item quantities.
-- Display cart total prices.
-- Session cart → user cart migration on login.
+- Ajouter au panier avec validation.  
+- Sauvegarder le panier et ses articles dans la base de données.  
+- Afficher une notification de succès lorsqu’un article est ajouté.  
+- Afficher le panier dans la navigation avec le compteur d’articles.  
+- Page panier pour consulter le contenu.  
+- Supprimer des articles du panier et fusionner les quantités des variantes.  
+- Augmenter/diminuer les quantités des articles.  
+- Afficher les prix et le total du panier.  
+- Migration du panier de session vers le panier utilisateur après connexion.  
 
-4️⃣ **Payment Integration (Stripe)**
+4️⃣ **Intégration des paiements (Stripe)**
 
-- Set up Stripe account and install Laravel Cashier.
-- Listen to Stripe webhooks locally using Stripe CLI.
-- Enable automatic tax collection in Stripe.
-- Create Stripe Checkout session for payments.
-- Collect shipping address during checkout if required.
-- Handle checkout success object and process webhook.
+- Configurer un compte Stripe et installer Laravel Cashier.  
+- Écouter les webhooks Stripe en local avec Stripe CLI.  
+- Activer la collecte automatique des taxes avec Stripe.  
+- Créer une session de paiement avec Stripe Checkout.  
+- Collecter l’adresse de livraison lors du paiement si nécessaire.  
+- Gérer l’objet de succès de paiement et traiter le webhook.  
 
-**Issues Exist**
+**Problèmes existants**
 
-- Empty cart after successful payment.
-- Prepare order confirmation page after payment.
-- Send order confirmation email to customer.
-- Render tables in Markdown for emails.
-- Add button in email to view order details.
-- Create order details page per user.
-- Send abandoned cart reminder email for inactive carts.
+- Vider le panier après un paiement réussi.  
+- Préparer une page de confirmation de commande après paiement.  
+- Envoyer un email de confirmation de commande au client.  
+- Afficher les tableaux en Markdown dans les emails.  
+- Ajouter un bouton dans l’email pour consulter les détails de la commande.  
+- Créer une page de détails de commande par utilisateur.  
+- Envoyer un email de rappel pour panier abandonné aux utilisateurs inactifs.  
